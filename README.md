@@ -1,0 +1,4 @@
+docker-darkcoin
+===============
+
+Dockerized darkcoind
