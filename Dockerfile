@@ -1,7 +1,7 @@
 FROM debian:jessie
 MAINTAINER Chris <chris@5werk.ch>
 
-RUN /usr/sbin/useradd -m -d /darkcoin -s /bin/bash darkcoin \
+RUN /usr/sbin/useradd -m -u 1020 -d /darkcoin -s /bin/bash darkcoin \
   && chown darkcoin:darkcoin -R /darkcoin
 
 RUN apt-get update \
