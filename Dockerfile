@@ -5,7 +5,7 @@ RUN /usr/sbin/useradd -m -d /darkcoin -s /bin/bash darkcoin \
   && chown darkcoin:darkcoin -R /darkcoin
 
 RUN apt-get update \
-  && apt-get install -y curl \
+  && apt-get install -y curl libc6-amd64 \
   && rm -rf /var/lib/apt/lists/*
 
 ENV DARKCOIN_VERSION 0.10.16.16
