@@ -9,13 +9,13 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 ENV DARKCOIN_VERSION 0.10.16.16
-ENV DARKCOIN_DOWNLOAD_URL https://github.com/darkcoinproject/darkcoin-binaries/raw/master/darkcoin-0.10.16.16-linux.tar.gz
+ENV DARKCOIN_DOWNLOAD_URL https://github.com/darkcoinproject/darkcoin-binaries/raw/master/darkcoin-$DARKCOIN_VERSION-linux.tar.gz
 ENV DARKCOIN_SHA256 ea353bd78b621957127392b82c5b36069dd299ea699653622a53f7268f1990e9
 RUN cd /tmp \
   && curl -sSL "$DARKCOIN_DOWNLOAD_URL" -o darkcoin.tgz \
   && echo "$DARKCOIN_SHA256 *darkcoin.tgz" | /usr/bin/sha256sum -c - \
-  && tar xzf darkcoin.tgz darkcoin-0.10.16.16-linux/bin/64/darkcoind \
-  && cp darkcoin-0.10.16.16-linux/bin/64/darkcoind /usr/local/bin/darkcoind \
+  && tar xzf darkcoin.tgz darkcoin-$DARKCOIN_VERSION-linux/bin/64/darkcoind \
+  && cp darkcoin-$DARKCOIN_VERSION-linux/bin/64/darkcoind /usr/local/bin/darkcoind \
   && rm -rf darkcoin*
 ADD darkcoind-starter.sh /usr/local/bin/
 RUN chmod a+x /usr/local/bin/darkcoind \
