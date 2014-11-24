@@ -17,10 +17,10 @@ case $cmd in
     exit $?
     ;;
   log)
-    tail -f $HOME/.darkcoin/debug.log
+    tail -f $HOME/debug.log
     ;;
   getconfig)
-    cat $HOME/.darkcoin/darkcoin.conf
+    cat $HOME/darkcoin.conf
     ;;
   *)
     echo "Unknown cmd $cmd"
