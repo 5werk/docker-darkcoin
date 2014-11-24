@@ -29,4 +29,4 @@ EXPOSE 9999
 ENTRYPOINT ["/usr/local/bin/darkcoind-starter.sh"]
 
 # Default arguments, can be overriden
-CMD ["darkcoind", "-datadir=/darkcoin", "-printtoconsole"]
+CMD ["darkcoind", "-datadir=/darkcoin"]
