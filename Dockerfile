@@ -8,9 +8,9 @@ RUN apt-get update \
   && apt-get install -y curl \
   && rm -rf /var/lib/apt/lists/*
 
-ENV DARKCOIN_VERSION 0.10.16.15
+ENV DARKCOIN_VERSION 0.10.16.16
 ENV DARKCOIN_DOWNLOAD_URL https://github.com/darkcoinproject/darkcoin-binaries/raw/master/darkcoin-$DARKCOIN_VERSION-linux.tar.gz
-ENV DARKCOIN_SHA256 cecb70c26284f2b3dd47af3250a581abeb84defbc9afd1dc43a290ceee79c48d
+ENV DARKCOIN_SHA256 ea353bd78b621957127392b82c5b36069dd299ea699653622a53f7268f1990e9
 RUN cd /tmp \
   && curl -sSL "$DARKCOIN_DOWNLOAD_URL" -o darkcoin.tgz \
   && echo "$DARKCOIN_SHA256 *darkcoin.tgz" | /usr/bin/sha256sum -c - \
@@ -28,4 +28,3 @@ EXPOSE 9999
 
 # Default arguments, can be overriden
 CMD ["darkcoind"]
-
