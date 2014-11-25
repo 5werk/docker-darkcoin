@@ -13,7 +13,7 @@ case $cmd in
     exit $?
     ;;
   darkcoind)
-    /usr/local/bin/darkcoind "$@"
+    darkcoind "$@"
     exit $?
     ;;
   log)
