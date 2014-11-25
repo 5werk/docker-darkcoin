@@ -17,8 +17,8 @@ RUN cd /tmp \
   && tar xzf darkcoin.tgz darkcoin-$DARKCOIN_VERSION-linux/bin/64/darkcoind \
   && cp darkcoin-$DARKCOIN_VERSION-linux/bin/64/darkcoind /usr/bin/darkcoind \
   && rm -rf darkcoin* \
-  && echo "#""!/bin/bash\n/usr/bin/darkcoind -datadir=/darkcoin \"\$@\"" > /usr/local/bin/darkcoind
-RUN chmod a+x /usr/local/bin/darkcoind \
+  && echo "#""!/bin/bash\n/usr/bin/darkcoind -datadir=/darkcoin \"\$@\"" > /usr/local/bin/darkcoind \
+  && chmod a+x /usr/local/bin/darkcoind \
   && chmod a+x /usr/bin/darkcoind
 
 USER darkcoin
