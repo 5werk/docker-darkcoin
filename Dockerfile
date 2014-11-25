@@ -18,10 +18,8 @@ RUN cd /tmp \
   && cp darkcoin-$DARKCOIN_VERSION-linux/bin/64/darkcoind /usr/bin/darkcoind \
   && rm -rf darkcoin* \
   && echo -e '#!/bin/bash\n/usr/bin/darkcoind -datadir=/darkcoin "$@"' > /usr/local/bin/darkcoind
-ADD darkcoind-starter.sh /usr/local/bin/
 RUN chmod a+x /usr/local/bin/darkcoind \
-  && chmod a+x /usr/bin/darkcoind \
-  && chmod a+x /usr/local/bin/darkcoind-starter.sh
+  && chmod a+x /usr/bin/darkcoind
 
 USER darkcoin
 ENV HOME /darkcoin
