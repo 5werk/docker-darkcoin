@@ -16,7 +16,12 @@ install() {
     echo "ERROR: please specify version to install"
     exit 1
   fi
+  if [ ! -d $DARKCOIN_PATH ]; then
+    echo "ERROR: $DARKCOIN_PATH does not exist"
+    exit 1
+  fi
   $docker pull 5werk/darkcoin:"$1"
+  chown -fR 1234:1234 $DARKCOIN_PATH
   run "5werk/darkcoin:$1"
 }
 
