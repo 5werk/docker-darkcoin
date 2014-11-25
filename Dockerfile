@@ -28,3 +28,4 @@ EXPOSE 9999
 
 # Default arguments, can be overriden
 CMD ["darkcoind"]
+
