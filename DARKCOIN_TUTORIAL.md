@@ -136,9 +136,7 @@ masternode start [your wallet password]
 ```
 If successful, you will see a message like *"successfully started masternode"*.
 
-<br/>
 ***Congratulations! You successfully setup your darkcoin masternode!***
-<br/><br/>
 
 ## 6. Server: Upgrade the darkcoin server periodically
 Check periodically if the darkcoin developers upgraded the darkcoin runtime. We will try to keep the `5werk/darkcoin` docker image up-to-date. The upgrade process for you is relatively simple. Just run:
@@ -151,7 +149,6 @@ If you have problems with the latest image you can always downgrade to a prior d
 ```bash
 sudo darkcoin-server.sh install-version 0.10.16.15
 ```
-<br><br><br><br/>
 * * *
 Feel free to open Github issues for comments.
 

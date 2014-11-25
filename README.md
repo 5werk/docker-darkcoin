@@ -10,3 +10,5 @@ The suite includes:
 3. and a basic step-by-step [tutorial](https://github.com/5werk/docker-darkcoin/blob/master/DARKCOIN_TUTORIAL.md) on how to set-up your masternode
 
 Check out the project on [Github](http://github.com/5werk/docker-darkcoin/).
+* * *
+Donations are welcome at [Xk9nfmMJuGRpAcABjxDVVNwGjBiSRmHVYe](https://chainz.cryptoid.info/drk/search.dws?q=Xk9nfmMJuGRpAcABjxDVVNwGjBiSRmHVYe). All DRKs will be used to operate a liquidity provider! Thanks
