@@ -8,7 +8,7 @@ Follows this 6 steps to host your own masternode:
 * [1. Client: Prepare a wallet](#1-client-prepare-a-wallet)
 * [2. Server: Install docker](#2-server-install-docker)
 * [3. Server: Create the darkcoin.conf](#3-server-create-the-darkcoinconf)
-* [4. Server: Install and run 5werk/darkcoin](#4-client-install-and-run-5werkdarkcoin)
+* [4. Server: Install and run 5werk/darkcoin](#4-server-install-and-run-5werkdarkcoin)
 * [5. Client: Unlock the wallet](#5-client-unlock-the-wallet)
 * [6. Server: Upgrade the darkcoin server periodically](#6-server-upgrade-the-darkcoin-server-periodically)
 
