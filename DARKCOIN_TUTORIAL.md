@@ -56,6 +56,8 @@ The install command for ubuntu is as follows:
 curl -sSL https://get.docker.com/ubuntu/ | sudo sh
 ```
 
+For debian, see [installation instructions](https://docs.docker.com/installation/debian/).
+
 ## 3. Server: Create the darkcoin.conf
 Choose a folder where you want to house the darkcoin blockchain and the server config file. In this setup we use `/var/darkcoin`. 
 
@@ -126,6 +128,7 @@ Add the following config options:
 ```config
 server=1
 addnode=23.23.186.131
+masternode=1
 masternodeprivkey=[FILL IN FROM ABOVE]
 masternodeaddr=[ip address of your server]:9999
 ```
