@@ -1,3 +1,6 @@
+# Dockerfile for DarkCoinD
+# http://darkcoin.io/
+
 FROM debian:jessie
 MAINTAINER Chris <chris@5werk.ch>
 
