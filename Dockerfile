@@ -11,9 +11,9 @@ RUN apt-get update \
   && apt-get install -y curl \
   && rm -rf /var/lib/apt/lists/*
 
-ENV DARKCOIN_VERSION 0.11.1.23
+ENV DARKCOIN_VERSION 0.11.1.25
 ENV DARKCOIN_DOWNLOAD_URL https://github.com/darkcoinproject/darkcoin-binaries/raw/master/darkcoin-$DARKCOIN_VERSION-linux.tar.gz
-ENV DARKCOIN_SHA256 4605e2d1055c5c4b4ce229e335944cca525c04f8c7827d81b55b6afa171bd6ae
+ENV DARKCOIN_SHA256 e503cf455a0684ac7cc60beea176bc83fdcd774406ebba9caef6e6a95f642904
 RUN cd /tmp \
   && curl -sSL "$DARKCOIN_DOWNLOAD_URL" -o darkcoin.tgz \
   && echo "$DARKCOIN_SHA256 *darkcoin.tgz" | /usr/bin/sha256sum -c - \
